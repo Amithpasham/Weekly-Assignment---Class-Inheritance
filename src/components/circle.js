@@ -1,6 +1,11 @@
-// import using require
+import Shape from "./shape";
+class Circle extends Shape {
+constructor(props) {
+super(props);
 
-// declare class
-
-
-// export class using module.exports
+}
+render() {
+return <div>{this.calculateArea()}</div>;
+}
+}
+export default Circle;
