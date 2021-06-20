@@ -1,41 +1,9 @@
-import React, { Component } from "react";
+const Shape = require("./shape.js");
 
-class Shape extends React.Component {
+// declare class
 
-  constructor(props) {
+// export class using module.exports
 
-    super(props);
-
-    this.state = { color: "red" };
-
-  }
-
-  drawShape() {
-
-    return "Shape";
-
-  }
-
-  calculateArea() {
-
-    return "Area";
-
-  }
-
-  render() {
-
-    return (
-
-      <div>
-
-        Area:{this.calculateArea()} shape:{this.drawShape()}
-
-      </div>
-
-    );
-
-  }
-
-}
-
-export default Shape;
+module.exports = class Circle extends Shape {
+  calculateArea() {}
+};
